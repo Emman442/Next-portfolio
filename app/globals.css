@@ -66,7 +66,7 @@ nav ul li a:hover::after{
     margin: 20px;
 }
 .header-text h1 span{
-    color: crimson;
+    color: #00FF89;
 }
 /* about styling */
 #about{
@@ -214,11 +214,11 @@ nav ul li a:hover::after{
     font-size: 17px;
 }
 .see:hover{
-    border: 1px solid crimson;
+    border: 1px solid #00FF89;
     background-color: transparent;
 }
 .services-list button:hover{
-    border: 1px solid crimson;
+    border: 1px solid #00FF89;
     background-color: transparent;
 }
 /* Portfolio styling */
