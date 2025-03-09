@@ -1,26 +1,333 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background: #080808;
+}
+.header{
+    background-size: cover;
+    background-position: center;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #00FF89;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+.header-text img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border: 5px dotted #00FF89;
+}
+.header-text h1{
+    font-size: 45px;
+    margin-top: 20px;
+}
+.header-text p{
+    font-size: 15px;
+    margin: 20px;
+}
+.header-text h1 span{
+    color: crimson;
+}
+/* about styling */
+#about{
+    padding: 80px 0;
+    color: #ababab
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.back{
+    font-weight: bold;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: "";
+    width: 0%;
+    height:4px;
+    background-color: #00FF89;
+    bottom: -8px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease;
+}
+.tab-links:hover::after{
+    width: 100px;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#services{
+    padding: 30px 0;
+    color: white;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    font-weight: 300;
+    transition: background 0.5s,transform 0.5s;
+}
+.cv{
+    margin-top: 10px;
+}
+.services-list div i{
+    font-size: 50px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div button a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.services-list div a:hover{
+    background: transparent;
+    transition: 0.4s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.services-list div:hover{
+    transform: translateY((-10px));
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom:30px;
+} 
+.services-list button{
+    background-color: #00FF89;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 60px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+    display: block;
+    border-radius: 5px ;
+    margin-top: 30px;
+}
+.see{
+    background-color: #00FF89;
+    color: white;
+    border: 1px solid transparent;
+    width: 150px;
+    height: 45px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+    display: block;
+    border-radius: 5px ;
+    margin-top: 30px; 
+}
+.see a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.see:hover{
+    border: 1px solid crimson;
+    background-color: transparent;
+}
+.services-list button:hover{
+    border: 1px solid crimson;
+    background-color: transparent;
+}
+/* Portfolio styling */
+#portfolio{
+    padding: 50px 0;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.work-list1{
+    display:flex;
+    justify-content: space-between;
+}
+.work-list{
+    display:flex;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+.work img{
+    width: 550px;
+    display: block;
+    border-radius: 10px;
+    height: 300px;
+    transition: all .4s ease-in-out;
+}
+.work img:hover{
+    transform: translateY(-10px);
+}
+.port{
+    color: #00FF89;
+}
+.sub-title{
+    text-align: center;
+    color: white;
+}
+/* contact */
+#contact{
+    color: white;
+}
+.contact-left{
+    flex-basis:35%;
+    
+}
+.contact-right{
+    flex-basis:65%;
+    color:white;
+}
+.contact-left p{
+    margin-top: 30px;
+    color:white;
+}
+.contact-left p i{
+    color: #00FF89;
+    margin-right: 15px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: #ababab;
+    margin-right: 15px;
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #00FF89;
+    transform: translateY(-5px);
+
+}
+.subscription{
+    width: 300px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #00FF89;
+}
+/* Css for small screens */
+@media only screen and (max-width: 600px){
+    .header{
+        background-image: url(/Chidera-studio.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
 }
