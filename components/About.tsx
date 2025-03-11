@@ -12,7 +12,7 @@ export default function About() {
             <img src="./Chidera-studio.jpg" alt="" />
           </div>
           <div className="about-col-2">
-            <h1 className="sub-title">About Me</h1>
+            <h1 className="sub-title text-center">About Me</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
               maiores eaque, libero, exercitationem autem accusantium temporibus

@@ -57,14 +57,14 @@ export default function Portfolio() {
     },
   ];
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center bg-[#262626]">
       <div id="portfolio" className="w-[90%] mx-auto">
         <div className="container">
-          <h1 className="sub-title">
+          <h1 className=" text-center text-[60px] my-10 font-bold text-white">
             My Projects <span className="port"> & Portfolios</span>
           </h1>
-          <div className="flex flex-wrap gap-4">
-            {portfolios.map((i) => (
+          <div className="grid grid-cols-3 gap-3">
+            {portfolios.map((i: any) => (
               <ProjectCard
                 tags={i.tags}
                 key={i.title}

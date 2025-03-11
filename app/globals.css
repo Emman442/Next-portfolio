@@ -252,10 +252,6 @@ nav ul li a:hover::after{
 .port{
     color: #00FF89;
 }
-.sub-title{
-    text-align: center;
-    color: white;
-}
 /* contact */
 #contact{
     color: white;

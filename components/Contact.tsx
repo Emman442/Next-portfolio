@@ -7,11 +7,11 @@ export default function Contact() {
   return (
     <div className="flex items-center justify-center">
       <div id="contact">
-        <h2 className="sub-title">Contact Me</h2>
+        <h2 className="sub-title text-center">Contact Me</h2>
         <div className="container">
           <div className="row">
             <div className="contact-left">
-              <h1 className="subtitle">Contact me</h1>
+        
               <p className="flex gap-6 items-center">
                 <span>
                   <GrSend size={20} color="#00FF89" />
