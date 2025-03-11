@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="h-[100vh] w-[100%] bg-[#262626] header flex justify-center border ">
       <div className="container mx-auto w-[90%] ">
         <nav>
-          <h1>Emmanuel.</h1>
+          <h1 className="text-[#00FF89] font-bold text-[40px]">Emmanuel.</h1>
           <ul>
             <li>
               <a href="#">Home</a>
@@ -35,13 +35,13 @@ export default function Hero() {
           <TypingAnimation />
           <div className="flex justify-center items-center text-center">
             <p className="text-[15px] max-w-md leading-relaxed">
-              FullStack/Blockchain Developer | Crafting Scalable Solutions with Code &
-              Creativity. Passionate About Web3, Open-Source Security, and
-              Optimizing Performance. A Solana Enthusiast, Gaming Aficionado,
-              and Tech Explorer Who’s Always Up for a Challenge
+              FullStack/Blockchain Developer | Crafting Scalable Solutions with
+              Code & Creativity. Passionate About Web3, Open-Source Security,
+              and Optimizing Performance. A Solana Enthusiast, Gaming
+              Aficionado, and Tech Explorer Who’s Always Up for a Challenge
             </p>
           </div>
-          <div className='text-center'>
+          <div className="text-center">
             <a href=""></a>
           </div>
         </div>

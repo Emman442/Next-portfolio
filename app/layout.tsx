@@ -7,7 +7,7 @@ const poppins = Poppins({
   subsets: ["latin"], // Loads only Latin characters
   weight: ["400", "700"], // Add specific weights
   display: "swap",
-  adjustFontFallback: false,
+  adjustFontFallback: false
 });
 
 const geistSans = Geist({
